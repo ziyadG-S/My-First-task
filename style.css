@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #2d2d2d;
+    font-family: Georgia, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.parent{
+    width:1350px;
+    min-height:630px;
+    background:white;
+    display:flex;
+}
+
+.left,
+.right{
+    flex:1;
+}
+
+.left img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+hr{
+    border: 1px solid red;
+    margin-bottom: 30px;
+}
+
+/* Labels */
+
+form > label{
+    display: inline-block;
+    width: 160px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Inputs */
+
+input[type="date"],
+input[type="time"],
+input[type="tel"],
+input[type="text"]{
+    width: 180px;
+    padding: 6px;
+}
+
+textarea{
+    width: 320px;
+    height: 90px;
+    resize: none;
+    padding: 6px;
+    vertical-align: top;
+}
+
+input[type="radio"]{
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+/* Appointment Type */
+
+.row{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.title{
+    width: 160px;
+    font-size: 18px;
+}
+
+.check{
+    display: flex;
+    flex-direction: column;
+}
+
+.check h4{
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.check label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: auto;
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+.check input{
+    width: 18px;
+    height: 18px;
+}
+
+/* Button */
+
+button{
+    margin-top: 20px;
+    margin-left: 160px;
+    padding: 8px 20px;
+    background: white;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+input[placeholder="First"]{
+    width: 130px;
+    margin-right: 15px;
+}
+input[placeholder="Last"]{
+    width: 130px;
+}
+
+input[placeholder="City"]{
+    width: 130px;
+    margin-right: 15px;
+}
+input[placeholder="State"]{
+    width: 130px;
+}
